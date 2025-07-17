@@ -1,5 +1,4 @@
 /* Reset */
-
 * {
   margin: 0;
   padding: 0;
@@ -40,7 +39,6 @@ body {
 
 .logo {
   height: 100px;
-  
 }
 
 .nav ul {
@@ -65,9 +63,9 @@ body {
 .banner {
   width: 100%;
   height: 100vh; /* tela inteira */
-   background: url('../../imgs/fundo.jpeg') no-repeat;
-  background-size: 140%;       /* aumenta o tamanho do fundo (zoom) */
-  background-position: left bottom;  /* move a imagem para esquerda e para baixo */
+  background: url('../../imgs/fundo.jpeg') no-repeat;
+  background-size: 140%;      
+  background-position: left bottom;  
   position: relative;
   display: flex;
   align-items: center;
@@ -75,13 +73,12 @@ body {
 }
 @media (min-height: 900px) {
   .banner {
-    background-position: 10% 95%;     /* mais para esquerda e mais para baixo */
+    background-position: 10% 95%; 
   }
 }
 
 .conteudo-banner {
-    margin-top: 130px; /* aumenta o valor pra descer mais */
-
+  margin-top: 130px; 
   z-index: 2;
   padding-left: 80px;
   display: flex;
@@ -99,7 +96,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Escurece o fundo */
+  background: rgba(0, 0, 0, 0.5); 
   z-index: 1;
 }
 .conteudo-banner h1 {
@@ -119,38 +116,34 @@ body {
   height: auto !important;
   margin-top: 70px;
   right: 20px;
-  transform: translateY(-50px); /* SOBE ele */
+  transform: translateY(-50px); 
   z-index: 1;
    
 }
 
 @media (min-height: 900px) {
   .cachorro-img {
-    top: 350px; /* deixa mais para baixo no fullscreen */
+    top: 350px; 
   }
 }
 
 h1 {
-  font-size: 90px; /* ou o tamanho que você quiser */
+  font-size: 90px;
 }
+
 .texto-verde {
   color: #ffffff;
   white-space: nowrap;
-  
   font-family: 'Montserrat', sans-serif;
-  font-style: italic;         /* Deixa inclinada */
-  font-weight: 700;           /* Um pouco mais grossa */
-
+  font-style: italic;         
+  font-weight: 700;        
 }
 
 .texto-azul {
   color: #ffffff;
-    font-weight: 300;           /* Mais fina */
-
+  font-weight: 300;     
   font-style: italic;
 }
-
-
 
 .btn-contato {
   display: inline-flex;
@@ -165,8 +158,6 @@ h1 {
   font-weight: bold;
   transition: background-color 0.3s;
   width: 220px; 
-  
-
 }
 
 .btn-contato span {
@@ -174,6 +165,7 @@ h1 {
   font-weight: 10;
   font-style: italic;
 }
+
 .btn-contato:hover {
   background-color: #00bf63;
 }
@@ -198,9 +190,9 @@ h1 {
   align-items: center;
   font-size: 1.8rem;
   font-weight: bold;
-  color: #29957e; /* verde escuro */
+  color: #29957e; 
   margin-bottom: 10px;
-  gap: 10px; /* espaço entre o texto e o ícone */
+  gap: 10px; 
 }
 
 .footer-titulo img {
@@ -210,35 +202,34 @@ h1 {
 
 .footer-legenda {
 color: #29957e;
-
-
 }
+
 .footer-container {
   display: flex;
-  justify-content: center; /* centraliza horizontalmente */
-align-items: flex-start; /* alinha no topo, para ficar bonito */
-  gap: 60px;               /* espaço entre os blocos */
-  flex-wrap: nowrap;       /* não quebra para linha nova */
+  justify-content: center; 
+align-items: flex-start;
+  gap: 60px;   
+  flex-wrap: nowrap;    
   padding: 20px 0;
   font-family: Arial, sans-serif;
 }
 
 .footer-item {
   text-align: center;
-  max-width: 220px; /* para controlar a largura de cada bloco */
+  max-width: 220px; 
 }
 
 .footer-item img {
   display: block;
   margin: 0 auto 10px;
-  max-width: 40px; /* ajuste o tamanho do ícone */
+  max-width: 40px;
 }
 
 .footer-item h3 {
   margin-bottom: 8px;
-  font-size: 15px;   /* título menor e mais delicado */
-  font-weight: 400; /* normal, sem negrito */
-  color: #000000; /* cor do título */
+  font-size: 15px;  
+  font-weight: 400; 
+  color: #000000; 
 }
 
 .footer-item p, 
@@ -248,7 +239,6 @@ align-items: flex-start; /* alinha no topo, para ficar bonito */
   color: #333;
   text-decoration: none;
 }
-
 
 .contato-item {
   display: flex;
