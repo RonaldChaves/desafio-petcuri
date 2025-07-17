@@ -4,83 +4,97 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>PetCure - Clínica Veterinária</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./assests/styles/styles.css">
+  
 </head>
+
 <body>
 
+  <!-- Cabeçalho fixo com logo e menu -->
   <header class="topo">
-    <div class="menu">
-      <img src="logo.png" alt="Logo PetCure" class="logo" />
+    <div class="container">
+      <img src="./imgs/logopetcure.png" alt="Logo PetCure" class="logo" />
       <nav class="nav">
-        <a href="#">Início</a>
-        <a href="#">Sobre nós</a>
-        <a href="#">Serviços</a>
-        <a href="#">Depoimentos</a>
-        <a href="#">Fotos</a>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre nós</a></li>
+          <li><a href="#equipe">Equipe</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+          <li><a href="#galeria">Fotos</a></li>
+        </ul>
       </nav>
     </div>
-
-    <div class="conteudo-banner">
-      <h1><span class="verde">Cuide do seu pet com</span><br>
-          <span class="azul">amor e dedicação!</span></h1>
-      <a href="#" class="btn-contato">
-       <img src="whatsapp.png" alt="WhatsApp" class="icone-whats" />CONTATO</a>
-    </div>
-
-    <div class="introducao"> 
-        <h2><img src="logo.png" alt="Logo" class="logo" />Conheça quem ama cuidar do seu Pet</a></h2>
-            <div><img src="missao.png" alt="Missao" class="icon" />
-                <h4>MISSÃO</h4>
-                <p>Oferecer um ambiente acolhedor e tratamentos de qualidade, combinando tecnologia e afeto.</p>
-            </div>
-
-            <div><img src="visao.png" alt="Visao" class="icon" />
-                <h4>VISÃO</h4>
-                <p>Ser uma referência na promoção da saúde e do bem-estar animal.</p>
-            </div>
-
-            <div><img src="valores.png" alt="Valores" class="icon" />
-                <h4>VALORES</h4>
-                <p>Excelência e Qualidade.<br>Amor pelos Animais.<br>Confiança e Transparência.<br>
-                    Compromisso com o Bem-Estar.</p>
-            </div>
-
-            <p>Bem-vindo à PetCure! Mais do que uma clínica, somos um time de apaixonados pela saúde e pelo
-                bem-estar animal. Nossa jornada começou com o objetivo de criar um espaço onde a excelência
-                veterinária e o tratamento humanizado andam lado a lado. Aqui, cada paciente é recebido com o
-                carinho e a atenção que merece, pois entendemos que ele é uma parte muito especial da sua família.</p>
-
-                <a href="#" class="btn-contato">
-                <img src="whatsapp.png" alt="WhatsApp" class="icone-whats" />CONTATO</a>
-    </div>
-
-    <div class="footer">
-        <h3>CONTATE-NOS</h3><img src="logo.png" alt="Logo" class="logo" />
-        <p>Cada latido e miado importa. Entre em contato e cuide de quem te ama incondicionalmente </p>
-
-        <div class="endereco">
-            <img src="local.png" alt="Endereco" class="icon" />
-            <p>Endereço:</p>
-            <p>R. Trinta e Seis, 115 - Loanda, João Monlevade - MG, 35931-008</p>
-        </div>
-
-        <div class="instagram">
-            <img src="instagram.png" alt="Instagram" class="icon" />
-            <p>Instagram:</p>
-            <p>@visaojrufop</p>
-        </div>
-
-        <div class="telefone">
-            <img src="telefone.png" alt="Telefone" class="icon" />
-            <p>Ligue para nós:</p>
-            <p>(31)99908-1568</p>
-        </div>
-    </div>
-
-
   </header>
 
+<!-- Banner principal -->
+  <section id="inicio" class="banner">
+  <div class="conteudo-banner">
+    <h1>
+      <span class="texto-verde">Cuide do seu pet com</span><br>
+      <span class="texto-azul">amor e dedicação!</span>
+    </h1>
+    <a href="#" class="btn-contato">
+      <i class="fa-brands fa-whatsapp fa-2x"></i>
+      <span>CONTATO</span>
+    </a>
+  </div>
+  <img src="./imgs/cachorro.png" alt="Cachorro" class="cachorro-img" />
+</section>
 
+
+
+  
+
+  <!-- Seções base -->
+  <section id="sobre"><h2>Sobre nós</h2></section>
+  <section id="equipe"><h2>Equipe</h2></section>
+  <section id="servicos"><h2>Serviços</h2></section>
+  <section id="depoimentos"><h2>Depoimentos</h2></section>
+  <section id="galeria"><h2>Galeria</h2></section>
+
+
+  
+  
+
+
+ <footer class="footer-container">
+    <footer>
+    <div class="footer-titulo">
+      <span>CONTATE-NOS</span>
+      
+      <img src="./imgs/coracaopetcure.png" alt="Coração" />
+     </div>
+     <div class="footer-legenda">
+      
+     <p><em>Cada latido e miado importa. Entre em contato e <strong>cuide</strong> de quem te ama 
+     incondicionalmente</em></p>
+
+     </div>
+
+    <div class="footer-container">
+      <div class="footer-item">
+        <i class="fa-solid fa-location-dot fa-3x"></i>
+        <h3>Endereço:</h3>
+        <p>R. Trinta e Seis, 115 - Loanda,<br>João Monlevade - MG,<br>35931-008</p>
+      </div>
+      <div class="footer-item">
+        <i class="fa-brands fa-instagram fa-3x"></i>
+        <h3>Instagram:</h3>
+        <p>@visaojunior</p>
+      </div>
+      <div class="footer-item">
+        <i class="fa-brands fa-whatsapp fa-3x"></i>
+        <h3>Ligue para nós:</h3>
+        <p>(31) 99908-1568 </p>
+      </div>
+    </div>
+  </footer>
+    
 
 </body>
 </html>
