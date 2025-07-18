@@ -4,8 +4,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url('../images/bg.jpg');
+    height: 80vh;
+    margin-top: 2em;
+    padding-bottom: 2em;
 }
 
+.title-equipe{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 2.5em;
+    color: #fff;
+    margin: 1em ;
+}
 .doctors{
     display: flex;
     flex-direction: row;
@@ -16,15 +27,15 @@
 }
 
 .doctor{
+    background-color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 1rem;
-    border: 1px solid #000;
     padding: .5em;
-    width: 18em;
-    height: 13rem;
+    max-width: 18em;
+    max-height: 13rem;
 }
 
 .doc{
@@ -32,7 +43,10 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    margin-bottom: 1em;
+    margin-bottom: .3em;
+    border: 1px solid black;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .doctor-details{
@@ -55,7 +69,8 @@
     color: #29957e;
 }
 .doc-img{
-    max-width: 50%;
+    width: 6em;
+    height: 90%;
 }
 
 .doctor-desc{
