@@ -1,5 +1,4 @@
-
-.equipe{
+.equipe {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,23 +9,24 @@
     padding-bottom: 2em;
 }
 
-.title-equipe{
+.title-equipe {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-size: 2.5em;
     color: #fff;
-    margin: 1em ;
-}
-.doctors{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2em;
+    margin: 1em;
 }
 
-.doctor{
+.doctors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 5em;
+    padding: 0 2em;
+}
+
+.doctor {
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -35,47 +35,62 @@
     border-radius: 1rem;
     padding: .5em;
     max-width: 18em;
-    max-height: 13rem;
+    height: 13rem;
 }
 
-.doc{
+.doc {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    margin-bottom: .3em;
-    border: 1px solid black;
+    margin-bottom: .5em;
     max-width: 100%;
     max-height: 100%;
 }
 
-.doctor-details{
+.doctor-details {
     gap: 0.6em;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
 }
+
 .doctor-name,
-.especialist{
+.especialist {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     color: #29957e;
 }
 
-.icon-doc{
+.icon-doc {
     font-size: 3em;
     padding: 0.15em;
     color: #29957e;
 }
-.doc-img{
+
+.doc-img {
     width: 6em;
     height: 90%;
 }
 
-.doctor-desc{
+.doctor-desc {
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
     text-align: center;
     color: #29957e;
+}
+
+@media (max-width: 768px) {
+    .equipe {
+        height: fit-content;
+        margin-top: 2em;
+        padding-bottom: 2em;
+    }
+
+    .title-equipe {
+        font-size: 2em;
+        text-align: center;
+        margin: 1em;
+    }
 }

@@ -1,5 +1,3 @@
-
-
 .logo-sobre {
     width: 5em;
     height: 4em;
@@ -104,13 +102,13 @@ p {
 }
 
 
-.contato{
+.contato {
     display: flex;
     justify-content: end;
     padding: 0 10em;
 }
 
-.button-contato{
+.button-contato {
     border: none;
     background-color: #29957e;
     padding: .6em;
@@ -118,15 +116,62 @@ p {
     border-radius: 1em;
     font-size: 1.1em;
 
-    transition: .4s; 
+    transition: .4s;
 }
 
-.button-contato:hover{
+.button-contato:hover {
     transition: .6s;
     background-color: #154b40;
 }
 
-.icon-wpp{
+.icon-wpp {
     color: #fff;
     /* font-size: 1.6em; */
+}
+
+@media (max-width: 768px) {
+    /* .sobre{
+        margin: 3em;
+    } */
+
+    .logo-sobre {
+        display: none;
+    }
+
+    .box-title {
+        padding: .5em 2em;
+        gap: 1.5em;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .title-sobre {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .visao {
+        background: #72DD80;
+        background: linear-gradient(180deg, rgba(114, 221, 128, 1) 0%, rgba(41, 149, 126, 1) 100%);
+    }
+
+    .sobre-text {
+        font-size: 1em;
+        text-align: justify;
+        margin: 2em 0;
+        padding: 0 2em;
+    }
+
+    .contato {
+        justify-content: center;
+    }
+
+    .button-contato {
+        font-size: .9em;
+    }
 }

@@ -7,7 +7,6 @@
     background-size: auto 100%;
 }
 
-
 .box-estrutura {
     width: 100%;
     text-align: center;
@@ -20,22 +19,22 @@
     color: #29957e;
 }
 
-.grid > .img-galery,
-.grid > .direita > .img-galery{
-    max-width:26em;
+.grid>.img-galery,
+.grid>.direita>.img-galery {
+    max-width: 26em;
     max-height: 40em;
     border: 8px solid #fff;
     border-radius: 1rem;
 }
 
-.grid{
+.grid {
     display: flex;
-    flex-direction: row;    
+    flex-direction: row;
     justify-content: space-evenly;
-    align-items:flex-start;
+    align-items: flex-start;
 }
 
-.direita{
+.direita {
     max-height: 44em;
     display: flex;
     flex-direction: column;
@@ -53,22 +52,31 @@
     z-index: 10;
 }
 
-/* TODO: resolver a responsividade */
-
-/* Mobile */
+/* Responsivo para seção .galery */
 @media (max-width: 768px) {
+    .galery {
+        height: fit-content;
+    }
+
+    .title-estrutura {
+        font-size: 2em;
+    }
+
+    .grid>.img-galery,
+    .grid>.direita>.img-galery {
+        max-width: 100%;
+    }
+
     .grid {
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-            "entrada"
-            "recepcao"
-            "banho"
-            "tosa";
-        place-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 2em;
+        padding: 1.5em;
+        margin-bottom: 6em;
     }
 
     .pets-decor {
-        max-width: 100px;
-        left: 10px;
+        width: 15em;
     }
 }
