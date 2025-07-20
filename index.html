@@ -1,29 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
-<<<<<<< HEAD
+<html lang="pt-BR">
 
-=======
->>>>>>> 26df90a790e385139cb816f09d4eee0283ac1364
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CDNJS Font Awesome -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!-- Google API Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS Styles File -->
+
+    <link rel="stylesheet" href="assests/styles/global.css">
+    <link rel="stylesheet" href="assests/styles/inicio.css">
+    <link rel="stylesheet" href="assests/styles/global.css">
+    <link rel="stylesheet" href="assests/styles/sobre.css">
+    <link rel="stylesheet" href="assests/styles/servicos.css">
+    <link rel="stylesheet" href="assests/styles/depoimentos.css">
+    <link rel="stylesheet" href="assests/styles/galeria.css">
+    <link rel="stylesheet" href="assests/styles/equipe.css">
+
+    <title>PetCure - Clínica Veterinária</title>
 </head>
-<<<<<<< HEAD
 
 <body>
+    <!-- NAVBAR -->
+    <header class="topo">
+        <div class="container">
+            <img src="assests/images/logopetcure.png" alt="Logo PetCure" class="logo" />
+
+            <!-- Botão do menu hambúrguer -->
+            <button class="menu-toggle" aria-label="Abrir menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <!-- Menu de navegação -->
+            <nav class="nav">
+                <ul>
+                    <li><a class="nav-a" href="#inicio">Início</a></li>
+                    <li><a class="nav-a" href="#sobre">Sobre nós</a></li>
+                    <li><a class="nav-a" href="#equipe">Equipe</a></li>
+                    <li><a class="nav-a" href="#servicos">Serviços</a></li>
+                    <li><a class="nav-a" href="#depoimentos">Depoimentos</a></li>
+                    <li><a class="nav-a" href="#galeria">Fotos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner principal -->
+    <section id="inicio" class="banner">
+        <div class="conteudo-banner">
+            <h1>
+                <span class="texto-cuide">Cuide do seu pet com</span><br>
+                <span class="texto-amor">amor e dedicação!</span>
+            </h1>
+            <a href="https://wa.me/5531999081568" target="_blank" rel="noopener noreferrer" class="btn-contato">
+                <i class="fa-brands fa-whatsapp fa-2x"></i>
+                <span>CONTATO</span>
+            </a>
+        </div>
+        <img src="assests/images/cachorro.png" alt="Cachorro" class="cachorro-img" />
+    </section>
+
+    <!-- SOBRE -->
 
     <section class="sobre">
-        <div class="title-sobre">
-            // Icon petcuri
-            <h2>
+        <div class="box-title">
+            <img class="logo-sobre" src="assests/images/logotipo.jpg" alt="logotipo">
+            <h2 class="title-sobre">
                 Conheça quem ama cuidar do seu <span class="pet">Pet</span>
             </h2>
         </div>
         <div class="cards">
 
-            <div class="missao">
-                // icon
+            <div class="card missao">
+                <i class="icon-card fa-solid fa-bullseye"></i>
                 <h4 class="cards-title">
                     Missão
                 </h4>
@@ -31,8 +93,8 @@
                     Oferecer um ambiente acolhedor e tratamentos de qualidade, combinando tecnologia e afeto.
                 </p>
             </div>
-            <div class="visao">
-                // icon
+            <div class="card visao">
+                <i class="icon-card fa-solid fa-eye"></i>
                 <h4 class="cards-title">
                     Visão
                 </h4>
@@ -40,22 +102,22 @@
                     Ser uma referência na promoção da saúde e do bem-estar animal.
                 </p>
             </div>
-            <div class="valores">
-                // icon
+            <div class="card valores">
+                <i class="icon-card fa-solid fa-hand-holding-dollar"></i>
                 <h4 class="cards-title">
                     Valores
                 </h4>
                 <p class="cards-text">
-                    Amor pelos Animais.
-                    Excelência e Qualidade.
-                    Confiança e Transparência.
-                    Compromisso com o Bem-Estar.
+                    Amor pelos Animais. <br>
+                    Excelência e Qualidade. <br>
+                    Confiança e Transparência. <br>
+                    Compromisso com o Bem-Estar. <br>
                 </p>
             </div>
 
         </div>
 
-        <p class="text">
+        <p class="sobre-text">
             Bem-vindo à PetCure! Mais do que uma clínica, somos um time de apaixonados pela saúde e pelo bem-estar
             animal. Nossa jornada começou com o objetivo de criar um espaço onde a excelência veterinária e o tratamento
             humanizado andam lado a lado. Aqui, cada paciente é recebido com o carinho e a atenção que merece, pois
@@ -63,33 +125,334 @@
         </p>
 
         <div class="contato">
-            <button>
-                // Icon WhatsApp
+            <button class="button-contato">
+                <i class="icon-wpp fa-brands fa-whatsapp"></i>
                 CONTATO
             </button>
         </div>
     </section>
 
+    <!-- EQUIPE -->
+
+    <section class="equipe">
+
+        <h2 class="title-equipe">
+            Uma Equipe Dedicada a Cuidar
+        </h2>
+        <div class="doctors">
+
+            <div class="doctor">
+                <div class="doc">
+                    <img class="doc-img" src="assests/images/dr_rafael.jpg" alt="Doutor Rafael">
+                    <div class="doctor-details">
+
+                        <h4 class="doctor-name">
+                            Dr. Rafael
+                        </h4>
+                        <span class="especialist">
+                            Cardiologista
+                        </span>
+                        <i class="icon-doc fa-solid fa-heart-pulse"></i>
+                    </div>
+                </div>
+                <p class="doctor-desc">
+                    Com 8 anos de experiência, especialista no diagnóstico e tratamento de condições cardíacas.
+                </p>
+            </div>
+            <div class="doctor">
+                <div class="doc">
+                    <img class="doc-img" src="assests/images/dr_ronald.jpg" alt="Doutor Rafael">
+                    <div class="doctor-details">
+
+                        <h4 class="doctor-name">
+                            Dr. Ronald
+                        </h4>
+                        <span class="especialist">
+                            Cirurgião Ortopético
+                        </span>
+                        <i class="icon-doc fa-solid fa-bone"></i>
+                    </div>
+                </div>
+                <p class="doctor-desc">
+                    Possui 12 anos de experiência. Restauração da mobilidade e do bem-estar através de
+                    cirurgias ortopédicas.
+                </p>
+            </div>
+            <div class="doctor">
+                <div class="doc">
+                    <img class="doc-img" src="assests/images/dr_ryan.jpg" alt="Doutor Rafael">
+                    <div class="doctor-details">
+
+                        <h4 class="doctor-name">
+                            Dr. Ryan
+                        </h4>
+                        <span class="especialist">
+                            Especialista em Animais Exóticos
+                        </span>
+                        <i class="icon-doc fa-solid fa-otter"></i>
+                    </div>
+                </div>
+                <p class="doctor-desc">
+                    7 anos se dedica ao cuidado de espécies não convencionais.
+                </p>
+            </div>
+            <div class="doctor">
+                <div class="doc">
+                    <img class="doc-img" src="assests/images/dr_lucas.jpg" alt="Doutor Rafael">
+                    <div class="doctor-details">
+
+                        <h4 class="doctor-name">
+                            Dr. Lucas
+                        </h4>
+                        <span class="especialist">
+                            Dermatologista
+                        </span>
+                        <i class="icon-doc fa-solid fa-paw"></i>
+                    </div>
+                </div>
+                <p class="doctor-desc">
+                    Focado em solucionar problemas de pele e alergias à 9 anos, aliviando o desconforto e
+                    melhorando a qualidade de vida dos animais.
+                </p>
+            </div>
+            <div class="doctor">
+                <div class="doc">
+                    <img class="doc-img" src="assests/images/dr_vitor.jpg" alt="Doutor Rafael">
+                    <div class="doctor-details">
+
+                        <h4 class="doctor-name">
+                            Dr. Vitor
+                        </h4>
+                        <span class="especialist">
+                            Anestesiologista
+                        </span>
+                        <i class="icon-doc fa-solid fa-syringe"></i>
+                    </div>
+                </div>
+                <p class="doctor-desc">
+                    10 anos de experiência, é o responsável por garantir procedimentos cirúrgicos seguros e uma
+                    recuperação tranquila e sem dor.
+                </p>
+            </div>
+            <div class="doctor">
+                <div class="doc">
+                    <img class="doc-img" src="assests/images/dr_julia.jpg" alt="Doutor Rafael">
+                    <div class="doctor-details">
+
+                        <h4 class="doctor-name">
+                            Dr. Julia
+                        </h4>
+                        <span class="especialist">
+                            Especialista Felina
+                        </span>
+                        <i class="icon-doc fa-solid fa-cat"></i>
+                    </div>
+                </div>
+                <p class="doctor-desc">
+                    À 6 anos que oferece uma abordagem focada no comportamento dos gatos, criando um ambiente para
+                    cuidar da saúde dos felinos.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SERVICOS -->
+
+    <section id="servicos">
+
+        <div class="imagem">
+            <img src="assests/images/secao_servicos.jpeg" alt="FOTO DE UM GATO" style="max-width: 100%;">
+        </div>
+
+        <div class="conteudo">
+            <h2>Conheça os serviços PetCure </h2>
+
+            <h3>Serviços de Bem-Estar e Estética Animal</h3>
+            <ul>
+                <li>Banho e tosa.</li>
+                <li>Hidratação e tratamentos dermatológicos.</li>
+                <li>Limpeza de ouvidos e cortes de unhas.</li>
+                <li>Spa pet.</li>
+            </ul>
+
+            <h3>Serviços cirúrgicos </h3>
+            <ul>
+                <li>Castração (cães e gatos).</li>
+                <li>Cirurgias de emergência.</li>
+                <li>Cirurgias odontológicas.</li>
+                <li>Remoção de tumores e nódulos.</li>
+            </ul>
+
+            <h3>Serviços adicionais</h3>
+            <ul>
+                <li>Pet táxi (transporte seguro para consultas).</li>
+                <li>Assistência de viagens.</li>
+                <li>Microchipagem e identificação.</li>
+                <li>Hospedagem animal.</li>
+            </ul>
+        </div>
+
+        <div class="icones">
+            <i class="fa-solid fa-stethoscope" alt="Ícone para representar Estetoscópio medico"></i>
+            <i class="fa-solid fa-hospital" alt="Ícone para reprentar um Hospital"></i>
+            <i class="fa-solid fa-shop" alt="Ícone para representar uma loja"></i>
+        </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+
+    <section class="depoimentos">
+        <div class="testimonials">
+
+            <div class="section-header">
+                <span class="quotes">“</span>
+                <h2>Depoimentos</h2>
+            </div>
+
+            <div class="testimonials-container">
+                <img src="assests/images/dog.jpeg" alt="Cachorro espiando" class="dog-peeking" />
+
+                <article class="testimonial-card">
+                    <div class="card-header">
+                        <img src="assests/images/fernando.jpeg" alt="Foto do Fernando" class="profile-pic" />
+                        <h3>Fernando</h3>
+                    </div>
+                    <p class="testimonial-text">
+                        Atendimento excelente, ambiente limpo e organizado a consulta foi
+                        completa e super bem explicada.
+                    </p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </article>
+
+                <article class="testimonial-card">
+                    <div class="card-header">
+                        <img src="assests/images/michelle.jpeg" alt="Foto da Michelle" class="profile-pic" />
+                        <h3>Michelle</h3>
+                    </div>
+                    <p class="testimonial-text">
+                        A melhor clínica da região! Sempre atenciosos e preocupados com o
+                        bem-estar dos nossos pets.
+                    </p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </article>
+
+                <article class="testimonial-card">
+                    <div class="card-header">
+                        <img src="assests/images/gabriel.jpeg" alt="Foto do Gabriel" class="profile-pic" />
+                        <h3>Gabriel</h3>
+                    </div>
+                    <p class="testimonial-text">
+                        Levo meus dois cães há anos e sempre fomos muito bem recebidos.
+                        Confiança total na equipe!
+                    </p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </article>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- GALERIA -->
 
     <section class="galery">
-        <div class="title-estrutura">
-            <h2>
+        <div class="box-estrutura">
+            <h2 class="title-estrutura">
                 Nossa Estrutura
             </h2>
         </div>
         <div class="grid">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+            <img class="img-galery" src="assests/images/entrada.jpg" alt="entrada">
+            <img class="img-galery" src="assests/images/recepcao.jpg" alt="recepcao">
+            <div class="direita">
+                <img class="img-galery" src="assests/images/banho.jpg" alt="banho">
+                <img class="img-galery" src="assests/images/tosa.jpg" alt="tosa">
+            </div>
         </div>
+
+        <!-- pets fixo no canto inferior esquerdo -->
+        <img src="assests/images/pets.jpg" alt="pets" class="pets-decor">
     </section>
 
+
+    <!-- FOOTER -->
+
+    <footer class="footer-container">
+        <footer>
+            <div class="footer-titulo">
+                <span>CONTATE-NOS</span>
+                <img src="assests/images/coracaopetcure.png" alt="Coração" />
+            </div>
+
+
+            <div class="footer-legenda">
+                <p><em>Cada latido e miado importa. Entre em contato e <strong>cuide</strong> de quem te ama
+                        incondicionalmente</em></p>
+
+
+            </div>
+
+            <p class="frase-mobile">
+                <em>
+                    Cada latido e miado importa. Entre em contato e<br>
+                    <span class="linha2"><strong>cuide</strong> de quem te ama incondicionalmente</span>
+                </em>
+            </p>
+
+
+
+            <div class="footer-container">
+
+                <div class="footer-item">
+                    <a href=" https://www.google.com/maps/place/UFOP+-+ICEA/@-19.8361918,-43.1677057,17z/data=!3m1!4b1!4m6!3m5!1s0xa507511efdbbd3:0x55a7ef3c198b9753!8m2!3d-19.8361918!4d-43.1677057!16s%2Fg%2F1tf172_b?entry=ttu&g_ep=EgoyMDI1MDcxNi4wIKXMDSoASAFQAw%3D%3D"
+                        target="_blank" rel="noopener noreferrer" title="Localização">
+                        <i class="fa fa-map-marker"></i> <!-- seu ícone de local -->
+                    </a>
+                    <h3>Endereço</h3>
+                    <p> R. Trinta e Seis, 115 - Loanda,<br>João Monlevade - MG,<br>35931-008</p>
+                </div>
+
+                <div class="footer-item">
+                    <a href=" https://www.instagram.com/visaojrufop/" target="_blank" rel="noopener noreferrer"
+                        title="Instagram">
+                        <i class="fa-brands fa-instagram fa-3x"></i>
+                    </a>
+                    <h3>Instagram</h3>
+                    <p>@sua_conta</p>
+                </div>
+
+                <div class="footer-item">
+                    <a href="https://wa.me/5531999081568" target="_blank" rel="noopener noreferrer" title="WhatsApp">
+                        <i class="fa-brands fa-whatsapp fa-3x"></i>
+                    </a>
+                    <h3>WhatsApp</h3>
+                    <p> (31) 99908-1568 </p>
+                </div>
+
+            </div>
+        </footer>
+
+        <script src="assests/scripts/index.js"></script>
 </body>
 
-=======
-<body>
-    
-</body>
->>>>>>> 26df90a790e385139cb816f09d4eee0283ac1364
 </html>

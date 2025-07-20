@@ -1,0 +1,112 @@
+.equipe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../images/bg.jpg');
+    height: 80vh;
+    margin-top: 2em;
+    padding-bottom: 2em;
+}
+
+.title-equipe {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 2.5em;
+    color: #fff;
+    margin: 1em;
+}
+
+.doctors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 5em;
+    padding: 0 2em;
+}
+
+.doctor {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    padding: .6em;
+    max-width: 18em;
+    height: 13.5rem;
+}
+
+.doc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: .5em;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.doctor-details {
+    gap: 0.6em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.doctor-name,
+.especialist {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    color: #29957e;
+    text-align: center;
+}
+
+.icon-doc {
+    font-size: 3em;
+    padding: 0.15em;
+    color: #29957e;
+}
+
+.doc-img {
+    width: 6.2em;
+    height: 95%;
+}
+
+.doctor-desc {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    text-align: center;
+    color: #29957e;
+
+}
+
+@media (max-width: 1024px) {
+    .equipe {
+        height: fit-content;
+        margin-top: 2em;
+        padding-bottom: 2em;
+    }
+
+    .title-equipe {
+        font-size: 2em;
+        text-align: center;
+        margin: 1em;
+    }
+}
+
+@media (max-width: 768px) {
+    .equipe {
+        height: fit-content;
+        margin-top: 2em;
+        padding-bottom: 2em;
+    }
+
+    .title-equipe {
+        font-size: 2em;
+        text-align: center;
+        margin: 1em;
+    }
+}
