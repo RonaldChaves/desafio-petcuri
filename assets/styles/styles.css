@@ -1,4 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 #servicos {
+    font-family: "Montserrat", sans-serif;
     display: flex;
     align-items: center;
     padding: 40px;
@@ -6,6 +12,7 @@
     max-width: 1200px; 
     margin: 0 auto; 
     overflow-x: hidden;
+    position: relative;
 }
 
 #servicos .imagem {
@@ -28,24 +35,53 @@
     background-color: #23796d;
     border-radius: 20px;
     color: white;
-    padding: 30px;
+    padding: 50px 30px 50px 30px;
     position: relative;
-    flex-basis: 45%;
+    flex-basis: 50%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin-left: -10%;
     flex-shrink: 0;
-    height: 90%; 
+    height: 100%; 
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
+#servicos .conteudo h2{
+    margin-left: 20px;
+    font-family: "Montserrat", sans-serif;
+} 
+
+
+#servicos .conteudo h3 {
+    list-style-position: inside;
+    padding: 5px;
+    margin-top: 15px;
+    margin-left: 20px;
+    font-family: "Montserrat", sans-serif;
+}
+
+#servicos .conteudo ul {
+    list-style-position: inside;
+    padding: 10px;
+    margin-top: 15px;
+    margin-left: 20px;
+    font-family: "Montserrat", sans-serif;
+}
+
+#servicos .conteudo li {
+    list-style-position: inside;
+    padding: 1px;
+    font-family: "Montserrat", sans-serif;
+}
+
 
 #servicos .icones {
     z-index: 3;
     display: flex;
     flex-direction: column; 
     align-items: center;
-    gap: 60px;              
+    gap: 100px;              
     padding-top: 30px;
     position: relative;
     left: -15%; 
@@ -57,11 +93,20 @@
     color: #ffffff;
 }
 
+@media (max-width: 1220px){
+    #servicos .icones {
+        display: none;
+    }
+}
+
 @media (max-width: 1024px) {
     #servicos {
         flex-direction: column;
         align-items: center;
         gap: 30px;
+        padding: 40px 20px; 
+        background-size: cover;
+        background-position: center;
     }
 
     #servicos .conteudo {
@@ -70,10 +115,22 @@
         margin-left: 0;
         text-align: center;
         flex-basis: auto; 
+        background-color: rgba(35, 121, 109, 0.9);
+        border-radius: 15px; 
+        padding: 30px;
+        display: block;
+    }
+
+    #servicos .conteudo ul {
+        display: block;
+        text-align: left;
+        list-style-position: inside;
+        margin: 0 auto 20px auto;
+        max-width: 370px; 
     }
 
     #servicos .imagem {
-       display: none;
+        display: none; 
     }
 
     #servicos .icones {
@@ -84,11 +141,15 @@
 @media (max-width: 768px) {
     #servicos {
         padding: 20px;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed; 
     }
 
     #servicos .conteudo {
         width: 100%;
         box-shadow: none;
+        background-color: rgba(35, 121, 109, 0.85); 
+        border-radius: 15px; 
     }
-
 }
