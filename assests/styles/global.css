@@ -1,13 +1,7 @@
 *,
 body {
-<<<<<<< HEAD
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-=======
-    padding: 0;
-    margin: 0;
-    scroll-behavior: smooth;
->>>>>>> e8ba28156c8ad00b40eab1eb240d6ce030778d0f
 }
