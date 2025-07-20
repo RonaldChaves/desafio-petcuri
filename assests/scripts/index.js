@@ -15,3 +15,12 @@ links.forEach(link => {
         nav.classList.remove("active");
     });
 });
+
+// Indicador de rolagem
+window.onscroll = function () {
+    const indicator = document.getElementById("scrollIndicator");
+    const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+    const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrolled = (scrollTop / scrollHeight) * 100;
+    indicator.style.width = scrolled + "%";
+}
