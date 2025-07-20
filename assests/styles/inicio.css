@@ -150,7 +150,7 @@
 .banner {
   width: 100%;
   height: 100vh; /* tela inteira */
-  background: url('../../imgs/fundo.jpeg') no-repeat;
+  background: url('../images/fundo.jpeg') no-repeat;
   background-size: 140%;      
   background-position: left bottom;  
   position: relative;
@@ -250,6 +250,7 @@ h1 {
   color: #ffffff;
   font-weight: 300;     
   font-style: italic;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .btn-contato {
@@ -259,6 +260,7 @@ h1 {
   gap: 8px; 
   padding: 7px 24px;
   background-color: #00bf63;
+  
   
   color: white;
   border-radius: 30px;
@@ -443,7 +445,7 @@ color: #29957e;
   .conteudo-banner {
     padding: 0;
     margin-top: 0;
-    right: 90px;
+    right: 10px;
     top: 20px;
     align-items: center;
     
@@ -467,10 +469,13 @@ color: #29957e;
     padding: 10px 20px;
     font-size: 14px;
     margin-top: 20px;
+    
+    
   }
 
   .btn-contato span {
     font-size: 16px;
+    
     
   }
 
