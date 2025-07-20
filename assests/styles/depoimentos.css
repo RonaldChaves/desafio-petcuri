@@ -1,0 +1,150 @@
+
+.depoimentos {
+  font-family: "Poppins", sans-serif;
+  background-color: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.testimonials {
+  background-color: #359583;
+  padding: 60px 20px;
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.section-header h2 {
+  color: #ffffff;
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+.section-header .quotes {
+  color: #ffffff;
+  font-size: 6rem;
+  font-weight: 700;
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.8;
+}
+
+.testimonials-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.dog-peeking {
+  position: absolute;
+  top: -90px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  z-index: 2;
+}
+
+.testimonial-card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 30px;
+  width: 100%;
+  max-width: 320px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  position: relative;
+  z-index: 1;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.testimonial-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.testimonial-card:nth-child(3) {
+  margin-top: 40px;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.profile-pic {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 3px solid #e0e0e0;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.card-header h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.testimonial-text {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.rating {
+  color: #f8d64e;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 1100px) {
+  .dog-peeking {
+    display: none;
+  }
+
+  .testimonials-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial-card:nth-child(3) {
+    margin-top: 0;
+  }
+
+  .section-header {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-header h2 {
+    font-size: 2.2rem;
+  }
+  .section-header .quotes {
+    font-size: 5rem;
+    top: -40px;
+  }
+  .testimonial-card {
+    max-width: 90%;
+  }
+}

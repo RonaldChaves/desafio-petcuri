@@ -1,0 +1,113 @@
+.galery {
+    padding: 3em 0;
+    width: 100%;
+    position: relative;
+    background: linear-gradient(to bottom, #ffffff 50%, #29957e 50%);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
+.box-estrutura {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.title-estrutura {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.5em;
+    color: #29957e;
+}
+
+.grid>.img-galery,
+.grid>.direita>.img-galery {
+    max-width: 26em;
+    max-height: 40em;
+    border: 8px solid #fff;
+    border-radius: 1rem;
+}
+
+.grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.direita {
+    max-height: 44em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Imagem dos pets fixa no canto inferior esquerdo */
+.pets-decor {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30em;
+    z-index: 10;
+}
+
+
+@media (max-width: 1024px) {
+    .galery {
+        height: fit-content;
+    }
+
+    .title-estrutura {
+        font-size: 2em;
+    }
+
+    .grid>.img-galery,
+    .grid>.direita>.img-galery {
+        max-width: 100%;
+    }
+
+    .grid {
+        flex-wrap: wrap;
+        gap: 2em;
+        padding: 2em;
+        margin-bottom: 15em;
+    }
+
+    .pets-decor {
+        width: 15em;
+    }
+}
+
+@media (max-width: 768px) {
+    .galery {
+        height: fit-content;
+    }
+
+    .title-estrutura {
+        font-size: 2em;
+    }
+
+    .grid>.img-galery,
+    .grid>.direita>.img-galery {
+        max-width: 100%;
+    }
+
+    .grid {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 2em;
+        padding: 1.5em;
+        margin-bottom: 6em;
+    }
+
+    .pets-decor {
+        width: 15em;
+    }
+<<<<<<< HEAD
+}
+=======
+}
+
+>>>>>>> e8ba28156c8ad00b40eab1eb240d6ce030778d0f
