@@ -111,10 +111,11 @@
         margin-left: 0;
         text-align: center;
         flex-basis: auto; 
-        background-color: rgba(35, 121, 109, 0.9);
+        background-color: #fff;
         border-radius: 15px; 
         padding: 30px;
         display: block;
+        color: #23796d;
     }
 
     #servicos .conteudo ul {
@@ -145,7 +146,7 @@
     #servicos .conteudo {
         width: 100%;
         box-shadow: none;
-        background-color: rgba(35, 121, 109, 0.85); 
+        background-color: #fff; 
         border-radius: 15px; 
     }
 }
