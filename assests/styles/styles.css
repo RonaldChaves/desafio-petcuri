@@ -39,6 +39,29 @@ body {
 
 .logo {
   height: 100px;
+  font-size: 1.5rem;
+  color: #0a5d25;
+}
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #0a5d25;
+}
+
+#menu-toggle {
+  display: none;
 }
 
 .nav ul {
@@ -59,6 +82,73 @@ body {
   color: #0a5d25;
 }
 
+/* Estilo do menu hamburguer */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 22px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 999;
+}
+
+
+.menu-toggle .bar {
+  height: 4px;
+  width: 100%;
+  background-color: #0a5d25; /* Verde escuro */
+  border-radius: 2px;
+}
+
+/* Estilo base da navbar */
+.nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav.active{
+  display: flex;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    position: absolute;
+    top: 130px; /* altura da header */
+    left: 0;
+    width: 100%;
+    padding: 1rem 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 998;
+  }
+
+  .nav.active {
+    display: flex;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 /* BANNER */
 .banner {
   width: 100%;
@@ -71,7 +161,10 @@ body {
   align-items: center;
   
 }
+
 @media (min-height: 900px) {
+
+  
   .banner {
     background-position: 10% 95%; 
   }
@@ -80,6 +173,7 @@ body {
 .conteudo-banner {
   margin-top: 130px; 
   z-index: 2;
+  
   padding-left: 80px;
   display: flex;
   flex-direction: column;
@@ -107,6 +201,22 @@ body {
   line-height: 1.4;
 }
 
+@media (max-width: 768px) {
+  .banner {
+    height: 250px; /* deixa menor no mobile */
+    justify-content: flex-start; /* joga o conteúdo pra esquerda */
+    padding-left: 20px; /* espaço da borda esquerda */
+  }
+
+  .banner-conteudo {
+    text-align: left; /* alinha o texto à esquerda */
+    font-size: 1.2rem; /* diminui o tamanho da fonte */
+    max-width: 90%;
+    z-index: 1000;
+  }
+
+  
+}
 /* CACHORRO */
 .cachorro-img {
   position: absolute;
@@ -123,7 +233,7 @@ body {
 
 @media (min-height: 900px) {
   .cachorro-img {
-    top: 350px; 
+    top: 50px; 
   }
 }
 
@@ -131,7 +241,7 @@ h1 {
   font-size: 90px;
 }
 
-.texto-verde {
+.texto-cuide {
   color: #ffffff;
   white-space: nowrap;
   font-family: 'Montserrat', sans-serif;
@@ -139,7 +249,7 @@ h1 {
   font-weight: 700;        
 }
 
-.texto-azul {
+.texto-amor {
   color: #ffffff;
   font-weight: 300;     
   font-style: italic;
@@ -152,12 +262,13 @@ h1 {
   gap: 8px; 
   padding: 7px 24px;
   background-color: #00bf63;
+  
   color: white;
   border-radius: 30px;
   text-decoration: none;
   font-weight: bold;
   transition: background-color 0.3s;
-  width: 220px; 
+  width: 230px; 
 }
 
 .btn-contato span {
@@ -200,6 +311,8 @@ h1 {
   height: 33px;
 }
 
+
+
 .footer-legenda {
 color: #29957e;
 }
@@ -207,16 +320,17 @@ color: #29957e;
 .footer-container {
   display: flex;
   justify-content: center; 
-align-items: flex-start;
+  align-items: flex-start;
   gap: 60px;   
   flex-wrap: nowrap;    
   padding: 20px 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .footer-item {
   text-align: center;
   max-width: 220px; 
+  font-family: 'Roboto', sans-serif;
 }
 
 .footer-item img {
@@ -257,4 +371,314 @@ align-items: flex-start;
 
 .icon {
   height: 20px;
+}
+
+
+
+/* Estilos mobile (responsivo) */
+
+@media (max-width: 768px) {
+  .cachorro-img {
+    position: relative;
+    display: block;
+    margin: 30px auto 0 auto;
+    left: 265px;
+    right: unset;
+    transform: none;
+    width: 60px !important; /* deixa menor */
+    margin-left: 20px; /* empurra um pouco pra direita */
+    
+  }
+}
+
+@media (max-width: 768px) {
+
+  
+  .logo img {
+    margin-left: 0;
+  }
+
+  .navbar {
+    padding-left: 10px;
+  }
+
+  .logo {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* GERAL */
+  .container {
+    width: 100%;
+  max-width: 1200px;
+  padding: 0 10px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .topo {
+    height: auto;
+    padding: 20px 0;
+    position: relative;
+  }
+
+  
+  .logo {
+    height: 80px;
+    margin-bottom: 10px;
+  }
+
+  /* BANNER */
+  .banner {
+    margin-top: 0;
+    height: 25vh;
+    flex-direction: column;
+    background-size: 150%;
+    background-position: left bottom;
+    padding: 60px 20px 40px;
+    text-align: center;
+  }
+
+  .conteudo-banner {
+    padding: 0;
+    margin-top: 0;
+    right: 90px;
+    top: 20px;
+    align-items: center;
+    
+  }
+
+  .conteudo-banner h1 {
+    font-size: 10px;
+    
+  }
+
+  .texto-cuide {
+    font-size: 24px;
+  }
+
+  .texto-amor {
+    font-size: 24px;
+  }
+
+  .btn-contato {
+    width: auto;
+    padding: 10px 20px;
+    font-size: 14px;
+    margin-top: 20px;
+    
+    
+    
+  }
+
+  .btn-contato span {
+    font-size: 16px;
+    
+  }
+
+  .cachorro-img {
+    position: absolute;
+    
+    bottom: auto;
+    width: 220px;
+    right: 1px;
+    height: auto;
+    bottom: 30px;
+    margin: 10px auto 0 auto;
+    transform: none;
+  }
+
+  .btn-contato {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 20px;
+  
+  gap: 8px; 
+  padding: 3px 24px;
+  background-color: #00bf63;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  width: 150px; 
+  }
+
+  /* Alinhar ícones na mesma linha */
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-container .footer-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+  }
+
+  .footer-container .footer-item h3,
+  .footer-container .footer-item p {
+    display: none; /* Esconde os textos */
+  }
+
+  .footer-container .footer-item i {
+    font-size: 28px;
+    color: #2fa6c0; /* azul dos ícones */
+    margin: 0 10px;
+  }
+
+  /* Alinhar todos os ícones na mesma linha */
+  .footer-container {
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  /* Frase continua aparecendo */
+  .footer-legenda p {
+    display: block;
+    margin-top: 20px;
+    font-size: 14px;
+    padding: 0 10px;
+  }
+  .footer-legenda {
+    display: none;
+  }
+
+  .frase-mobile {
+    display: block;
+    color: #29957e;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    margin: 0 auto;
+  }
+
+  .frase-mobile .linha2 {
+    display: inline-block;
+    margin-top: 4px;
+    text-align: center;
+  }
+
+  .footer-container .footer-item i {
+    font-size: 50px;
+    color: #2fa6c0; /* azul dos ícones */
+    margin: 0 10px;
+  }
+
+  .footer-titulo {
+    color: #2fa6c0;
+  }
+  .frase-mobile {
+    color: #2fa6c0;
+  }
+}
+
+/* --- MOBILE --- */
+
+/* Pequenas telas (ex: iPhone SE) */
+@media (max-width: 480px) {
+  .conteudo-banner h1 {
+    margin-top: 1px; /* afasta mais do topo */
+    padding-left: 20px !important;
+    text-align: center;
+  }
+
+  .texto-cuide {
+    font-size: 20px;
+  }
+
+  .texto-amor {
+    font-size: 18px;
+  }
+
+  .btn-contato span {
+    font-size: 14px;
+  }
+}
+
+
+.footer-item p, 
+.footer-item a {
+  font-size: 12px; 
+  
+  color: #333;
+  text-decoration: none;
+}
+
+.contato-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.footer-item i {
+  font-size: 32px;
+  color: #29957e;
+  margin-bottom: 10px;
+  flex-shrink: 0; 
+}
+
+.footer-icons {
+  justify-content: space-evenly;
+}
+.icon {
+  height: 20px;
+}
+
+
+
+
+/* Exibe apenas a versão desktop por padrão */
+.footer-legenda {
+  display: block;
+}
+
+.frase-mobile {
+  display: none;
+}
+
+/* Versão mobile */
+@media (max-width: 768px) {
+  .footer-legenda {
+    display: none;
+  }
+
+  .frase-mobile {
+    display: block;
+    color: #29957e;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    margin: 0 auto;
+  }
+
+  .frase-mobile .linha2 {
+    display: inline-block;
+    margin-top: 4px;
+    text-align: center;
+  }
+
+  .footer-container .footer-item i {
+    font-size: 50px;
+    color: #2fa6c0; /* azul dos ícones */
+    margin: 0 10px;
+  }
+
+  .footer-titulo {
+    color: #2fa6c0;
+  }
+  .frase-mobile {
+    color: #2fa6c0;
+  }
 }

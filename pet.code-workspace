@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../OneDrive/Área de Trabalho/imagenssite"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "pet",
+		"liveServer.settings.port": 5501
+	}
+}

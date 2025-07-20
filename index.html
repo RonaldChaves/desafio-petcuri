@@ -5,40 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>PetCure - Clínica Veterinária</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assests/styles/styles.css">
-  
 </head>
-
 <body>
+<!-- Cabeçalho fixo com logo e menu -->
+<header class="topo">
+  <div class="container">
+    <img src="./imgs/logopetcure.png" alt="Logo PetCure" class="logo" />
 
-  <!-- Cabeçalho fixo com logo e menu -->
-  <header class="topo">
-    <div class="container">
-      <img src="./imgs/logopetcure.png" alt="Logo PetCure" class="logo" />
-      <nav class="nav">
-        <ul>
-          <li><a href="#inicio">Início</a></li>
-          <li><a href="#sobre">Sobre nós</a></li>
-          <li><a href="#equipe">Equipe</a></li>
-          <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#depoimentos">Depoimentos</a></li>
-          <li><a href="#galeria">Fotos</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <!-- Botão do menu hambúrguer -->
+    <button class="menu-toggle" aria-label="Abrir menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+
+    <!-- Menu de navegação -->
+    <nav class="nav">
+      <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre">Sobre nós</a></li>
+        <li><a href="#equipe">Equipe</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#galeria">Fotos</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
 <!-- Banner principal -->
   <section id="inicio" class="banner">
   <div class="conteudo-banner">
     <h1>
-      <span class="texto-verde">Cuide do seu pet com</span><br>
-      <span class="texto-azul">amor e dedicação!</span>
+      <span class="texto-cuide">Cuide do seu pet com</span><br>
+      <span class="texto-amor">amor e dedicação!</span>
     </h1>
-    <a href="#" class="btn-contato">
+    <a href="https://wa.me/5531999081568" target="_blank" rel="noopener noreferrer" class="btn-contato">
       <i class="fa-brands fa-whatsapp fa-2x"></i>
       <span>CONTATO</span>
     </a>
@@ -57,32 +62,73 @@
     <footer>
     <div class="footer-titulo">
       <span>CONTATE-NOS</span>
-      
       <img src="./imgs/coracaopetcure.png" alt="Coração" />
      </div>
+
+     
      <div class="footer-legenda">
       <p><em>Cada latido e miado importa. Entre em contato e <strong>cuide</strong> de quem te ama 
         incondicionalmente</em></p>
+
+      
      </div>
 
+        <p class="frase-mobile">
+        <em>
+          Cada latido e miado importa. Entre em contato e<br>
+          <span class="linha2"><strong>cuide</strong> de quem te ama incondicionalmente</span>
+        </em>
+      </p>
+
+
+      
     <div class="footer-container">
-      <div class="footer-item">
-        <i class="fa-solid fa-location-dot fa-3x"></i>
-        <h3>Endereço:</h3>
-        <p>R. Trinta e Seis, 115 - Loanda,<br>João Monlevade - MG,<br>35931-008</p>
-      </div>
-      <div class="footer-item">
-        <i class="fa-brands fa-instagram fa-3x"></i>
-        <h3>Instagram:</h3>
-        <p>@visaojunior</p>
-      </div>
-      <div class="footer-item">
-        <i class="fa-brands fa-whatsapp fa-3x"></i>
-        <h3>Ligue para nós:</h3>
-        <p>(31) 99908-1568 </p>
-      </div>
+      
+<div class="footer-item">
+    <a href=" https://www.google.com/maps/place/UFOP+-+ICEA/@-19.8361918,-43.1677057,17z/data=!3m1!4b1!4m6!3m5!1s0xa507511efdbbd3:0x55a7ef3c198b9753!8m2!3d-19.8361918!4d-43.1677057!16s%2Fg%2F1tf172_b?entry=ttu&g_ep=EgoyMDI1MDcxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" title="Localização">
+      <i class="fa fa-map-marker"></i> <!-- seu ícone de local -->
+    </a>
+    <h3>Endereço</h3>
+    <p> R. Trinta e Seis, 115 - Loanda,<br>João Monlevade - MG,<br>35931-008</p>
+  </div>
+
+  <div class="footer-item">
+    <a href=" https://www.instagram.com/visaojrufop/" target="_blank" rel="noopener noreferrer" title="Instagram">
+      <i class="fa-brands fa-instagram fa-3x"></i>
+    </a>
+    <h3>Instagram</h3>
+    <p>@sua_conta</p>
+  </div>
+
+  <div class="footer-item">
+    <a href="https://wa.me/5531999081568" target="_blank" rel="noopener noreferrer" title="WhatsApp">
+      <i class="fa-brands fa-whatsapp fa-3x"></i>
+    </a>
+    <h3>WhatsApp</h3>
+    <p> (31) 99908-1568 </p>
+  </div>
+
     </div>
   </footer>
   
+
+  <script>
+  const toggle = document.querySelector(".menu-toggle");
+  const nav = document.querySelector(".nav");
+  const links = document.querySelectorAll(".nav a");
+
+  // Abre/fecha ao clicar no botão
+  toggle.addEventListener("click", () => {
+    nav.classList.toggle("active");
+  });
+
+  // Fecha o menu ao clicar em qualquer link
+  links.forEach(link => {
+    link.addEventListener("click", () => {
+      nav.classList.remove("active");
+    });
+  });
+</script>
+
 </body>
 </html>
