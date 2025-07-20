@@ -129,6 +129,17 @@ p {
     /* font-size: 1.6em; */
 }
 
+@media (max-width: 1024px ){
+    .card{
+        height: 12em;
+    }
+
+    .sobre-text{
+        text-align: justify;
+    }
+}
+
+
 @media (max-width: 768px) {
     /* .sobre{
         margin: 3em;
@@ -175,3 +186,4 @@ p {
         font-size: .9em;
     }
 }
+

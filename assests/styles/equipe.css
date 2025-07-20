@@ -33,9 +33,9 @@
     justify-content: center;
     align-items: center;
     border-radius: 1rem;
-    padding: .5em;
+    padding: .6em;
     max-width: 18em;
-    height: 13rem;
+    height: 13.5rem;
 }
 
 .doc {
@@ -61,6 +61,7 @@
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     color: #29957e;
+    text-align: center;
 }
 
 .icon-doc {
@@ -70,8 +71,8 @@
 }
 
 .doc-img {
-    width: 6em;
-    height: 90%;
+    width: 6.2em;
+    height: 95%;
 }
 
 .doctor-desc {
@@ -79,6 +80,21 @@
     font-optical-sizing: auto;
     text-align: center;
     color: #29957e;
+
+}
+
+@media (max-width: 1024px) {
+    .equipe {
+        height: fit-content;
+        margin-top: 2em;
+        padding-bottom: 2em;
+    }
+
+    .title-equipe {
+        font-size: 2em;
+        text-align: center;
+        margin: 1em;
+    }
 }
 
 @media (max-width: 768px) {
@@ -94,3 +110,4 @@
         margin: 1em;
     }
 }
+
