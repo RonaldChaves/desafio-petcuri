@@ -112,4 +112,8 @@
         text-align: center;
         margin: 1em;
     }
+
+    .doctors{
+        gap: 2em;
+    }
 }
