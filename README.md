@@ -1,12 +1,12 @@
 # 🐾 PetCure - Clínica Veterinária
 
-**PetCure** é um site institucional fictício desenvolvido por uma equipe da Empresa Júnior **Visão Jr - UFOP** com o objetivo de promover uma clínica veterinária acolhedora, moderna e conectada com o bem-estar animal.
+**PetCure** é um site fictício desenvolvido por uma equipe da Empresa Júnior **Visão Jr - UFOP** com o objetivo de promover uma clínica veterinária acolhedora, moderna e conectada com o bem-estar animal.
 
 O projeto apresenta seções informativas sobre a clínica, equipe, serviços, estrutura e depoimentos, tudo com um visual amigável e responsivo.
 
 ## 🌐 Demonstração
 
-> Acesse: [PetCure - Clínica Veterinária](https://seusiteaqui.com) *(coloque aqui o link se estiver publicado)*
+> Acesse: [PetCure - Clínica Veterinária](clinicapetcure.netlify.app)
 
 ---
 
@@ -44,12 +44,6 @@ O projeto apresenta seções informativas sobre a clínica, equipe, serviços, e
 
 ---
 
-## 📷 Preview
-
-*(adicione aqui prints do site após pronto)*
-
----
-
 ## ⚙️ Como executar o projeto
 
 ### Pré-requisitos
@@ -62,7 +56,7 @@ O projeto apresenta seções informativas sobre a clínica, equipe, serviços, e
 1. Clone este repositório:
 
 ```bash
-git clone https://github.com/seuusuario/petcure.git
+git clone https://github.com/RonaldChaves/desafio-petcuri.git
 ```
 
 2. Navegue até a pasta:
@@ -122,14 +116,12 @@ cd petcure
 
 Este projeto foi desenvolvido pelos membros da empresa júnior **Visão Jr - UFOP**:
 
-- Rafael (Cardiologista)
-- Ronald (Ortopedia)
-- Ryan (Exóticos)
-- Lucas (Dermatologia)
-- Vitor (Anestesia)
-- Julia (Especialista Felina)
-
-> Obs: Equipe fictícia criada para fins de simulação e estudo.
+- Rafael 
+- Ronald 
+- Ryan 
+- Lucas 
+- Vitor 
+- Julia 
 
 ---
 

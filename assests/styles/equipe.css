@@ -4,9 +4,9 @@
     justify-content: center;
     align-items: center;
     background-image: url('../images/bg.jpg');
-    height: 80vh;
+    height: 85vh;
     margin-top: 2em;
-    padding-bottom: 2em;
+    padding: 2em 0;
 }
 
 .title-equipe {
@@ -35,7 +35,7 @@
     border-radius: 1rem;
     padding: .6em;
     max-width: 18em;
-    height: 13.5rem;
+    height: 14rem;
 }
 
 .doc {
@@ -115,5 +115,9 @@
 
     .doctors{
         gap: 2em;
+    }
+
+    .doctor{
+        height: 15em;
     }
 }
