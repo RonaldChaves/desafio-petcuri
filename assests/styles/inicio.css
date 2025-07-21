@@ -150,20 +150,20 @@
 .banner {
   width: 100%;
   height: 100vh; /* tela inteira */
-  background: url('../images/fundo.jpeg') no-repeat;
-  background-size: 140%;      
-  background-position: left bottom;  
+  /*background: url('../images/fundo.jpeg') no-repeat;*/
+  /*teste*/
+  background: url('../images/fundocachorro.jpg') no-repeat; /* coloquei cachorro na imagem do fundo*/
+  background-size: 120%;      
+  background-position: 20% 90%;  
   position: relative;
   display: flex;
   align-items: center;
   
 }
 
-@media (min-height: 900px) {
-
-  
+@media (max-width: 768px) {
   .banner {
-    background-position: 10% 95%; 
+    background-position: 28% 100% !important; /* empurra a imagem mais pra direita / arrumei cachoror mobile*/
   }
 }
 
@@ -198,6 +198,36 @@
   line-height: 1.4;
 }
 
+@media (max-width: 1024px) and (orientation: landscape) { /*celular deitado*/
+  .conteudo-banner h1 {
+    font-size: 2rem; /* diminui o tamanho da fonte */
+    text-align: center;
+    padding-left: 20px; /* empurra o texto mais pra esquerda */
+  }
+
+  .conteudo-banner {
+    align-items: flex-start;
+    
+  }
+
+  
+}
+
+@media (max-height: 500px) { /*  CSS para reduzir espaçamento e fonte da navbar quando deita o celular*/
+  .topo {
+    padding: 10px 20px;
+    height: auto; /* se tiver height fixo, melhor remover ou ajustar */
+  }
+
+  .topo nav ul {
+    gap: 12px; /* diminui espaçamento entre os itens */
+  }
+
+  .topo nav ul li a {
+    font-size: 0.85rem; /* diminui a fonte dos links */
+  }
+}
+
 @media (max-width: 768px) {
   .banner {
     height: 250px; 
@@ -215,7 +245,7 @@
   
 }
 /* CACHORRO */
-.cachorro-img {
+/*.cachorro-img {
   position: absolute;
   left: 944px;
   top: 28s3.3px;
@@ -225,8 +255,7 @@
   right: 20px;
   transform: translateY(-50px); 
   z-index: 1;
-   
-}
+}tirei, colei o cachorro no proprio fundo*/ 
 
 @media (min-height: 900px) {
   .cachorro-img {
@@ -253,21 +282,23 @@ h1 {
   font-family: 'Montserrat', sans-serif;
 }
 
-.btn-contato {
+.btn-contato { /*botao do banner*/
   display: inline-flex;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 8px;
   gap: 8px; 
-  padding: 7px 24px;
+  padding: 4px 15px;
   background-color: #00bf63;
-  
-  
   color: white;
   border-radius: 30px;
   text-decoration: none;
   font-weight: bold;
   transition: background-color 0.3s;
-  width: 230px; 
+  width: 140px;  
+  font-family: 'Poppins', sans-serif;
+  font-style: italic;
+  font-size: 18px;
+  font-weight: 350;
 }
 
 .btn-contato span {
@@ -445,9 +476,10 @@ color: #29957e;
   .conteudo-banner {
     padding: 0;
     margin-top: 0;
-    right: 10px;
+    
+    right: 70px; /*escrita branca mobiel*/
     top: 20px;
-    align-items: center;
+    
     
   }
 
@@ -479,6 +511,17 @@ color: #29957e;
     
   }
 
+  .button-contato { /*botao contato do banner*/
+    width: 100%;
+    max-width: 300px;  /* opcional, para limitar o tamanho máximo */
+    margin-left: 20px; /* opcional, para dar afastamento da borda esquerda */
+    display: inline-flex;
+    justify-content: center; /* centraliza o conteúdo dentro do botão */
+    align-items: center;
+    padding: 10px 20px;
+    gap: 3px;
+  }
+
   .cachorro-img {
     position: absolute;
     
@@ -491,20 +534,23 @@ color: #29957e;
     transform: none;
   }
 
-  .btn-contato {
+  .btn-contato { /* do banner*/
   display: inline-flex;
   align-items: center;
-  margin-top: 20px;
-  
+  margin-top: 8px;
   gap: 8px; 
-  padding: 3px 24px;
+  padding: 4px 15px;
+  font-family: 'Poppins', sans-serif;
+  font-style: italic;
   background-color: #00bf63;
   color: white;
   border-radius: 30px;
   text-decoration: none;
   font-weight: bold;
   transition: background-color 0.3s;
-  width: 150px; 
+  width: 95px; 
+  font-size: 10px;
+  font-weight: 350;
   }
 
   .footer-container {
@@ -527,7 +573,7 @@ color: #29957e;
 
   .footer-container .footer-item i {
     font-size: 28px;
-    color: #2fa6c0; 
+    color: #29957e; 
     margin: 0 10px;
   }
 
@@ -564,15 +610,15 @@ color: #29957e;
 
   .footer-container .footer-item i {
     font-size: 50px;
-    color: #2fa6c0; 
+    color: #29957e; 
     margin: 0 10px;
   }
 
   .footer-titulo {
-    color: #2fa6c0;
+    color: #29957e;
   }
   .frase-mobile {
-    color: #2fa6c0;
+    color: #29957e;
   }
 }
 
@@ -660,14 +706,14 @@ color: #29957e;
 
   .footer-container .footer-item i {
     font-size: 50px;
-    color: #2fa6c0; /* azul dos ícones */
+    color: #29957e; /* azul dos ícones */
     margin: 0 10px;
   }
 
   .footer-titulo {
-    color: #2fa6c0;
+    color: #29957e;
   }
   .frase-mobile {
-    color: #2fa6c0;
+    color: #29957e;
   }
 }
