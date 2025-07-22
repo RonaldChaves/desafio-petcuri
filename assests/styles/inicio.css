@@ -111,41 +111,6 @@
   display: flex;
 }
 
-/* MOBILE */
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: flex;
-  }
-
-  .nav {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    background-color: white;
-    position: absolute;
-    top: 130px; 
-    left: 0;
-    width: 100%;
-    padding: 1rem 0;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    z-index: 998;
-  }
-
-  .nav.active {
-    display: flex;
-  }
-
-  .nav ul {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .nav ul li {
-    width: 100%;
-    text-align: center;
-  }
-}
-
 /* BANNER */
 .banner {
   width: 100%;
@@ -160,15 +125,6 @@
   align-items: center;
 
   overflow: hidden; 
-}
-
-@media (max-width: 768px) {
-  .banner {
-    background-position: 28% 100% !important; /* empurra a imagem mais pra direita / arrumei cachoror mobile*/
-    height: 35vh; 
-    background-position: center center; 
-    background-size: cover;
-  }
 }
 
 .conteudo-banner {
@@ -209,84 +165,6 @@
   font-size: 50px;
   font-weight: bold;
   line-height: 1.4;
-}
-
-@media (max-width: 1024px) and (orientation: landscape) { /*celular deitado*/
-  .conteudo-banner h1 {
-    font-size: 2rem; /* diminui o tamanho da fonte */
-    text-align: center;
-    padding-left: 20px; /* empurra o texto mais pra esquerda */
-  }
-
-  .conteudo-banner {
-    align-items: flex-start;
-    margin-left: 8%;
-    margin-bottom: 4%;
-    width: 100%;
-    max-width: 300px;  /* opcional, para limitar o tamanho máximo */
-    margin-left: 20px; /* opcional, para dar afastamento da borda esquerda */
-    display: inline-flex;
-    justify-content: center; /* centraliza o conteúdo dentro do botão */
-    align-items: center;
-    padding: 10px 20px;
-    gap: 3px;
-  }
-  
-  
-}
-
-@media (max-height: 500px) { /*  CSS para reduzir espaçamento e fonte da navbar quando deita o celular*/
-  .topo {
-    padding: 10px 20px;
-    height: auto; /* se tiver height fixo, melhor remover ou ajustar */
-  }
-
-  .topo nav ul {
-    gap: 12px; /* diminui espaçamento entre os itens */
-  }
-
-  .topo nav ul li a {
-    font-size: 0.85rem; /* diminui a fonte dos links */
-  }
-}
-
-@media (max-width: 768px) {
-  .banner {
-    height: 250px; 
-    justify-content: flex-start; 
-    padding-left: 20px; 
-  }
-
-  .banner-conteudo {
-    text-align: left;
-    font-size: 1.2rem; 
-    max-width: 90%;
-    z-index: 1000;
-  }
-
-  
-}
-/* CACHORRO */
-/*.cachorro-img {
-  position: absolute;
-  left: 944px;
-  top: 28s3.3px;
-  width: 160px !important;
-  height: auto !important;
-  margin-top: 70px;
-  right: 20px;
-  transform: translateY(-50px); 
-  z-index: 1;
-}tirei, colei o cachorro no proprio fundo*/ 
-
-@media (min-height: 900px) {
-  .cachorro-img {
-    top: 50px; 
-  }
-}
-
-h1 {
-  font-size: 90px;
 }
 
 .texto-cuide {
@@ -424,8 +302,89 @@ color: #29957e;
   height: 20px;
 }
 
+@media (max-width: 1024px) and (orientation: landscape) { /*celular deitado*/
+  .conteudo-banner h1 {
+    font-size: 2rem; /* diminui o tamanho da fonte */
+    text-align: center;
+    padding-left: 20px; /* empurra o texto mais pra esquerda */
+  }
+
+  .conteudo-banner {
+    align-items: flex-start;
+    margin-left: 8%;
+    margin-bottom: 4%;
+    width: 100%;
+    max-width: 300px;  /* opcional, para limitar o tamanho máximo */
+    margin-left: 20px; /* opcional, para dar afastamento da borda esquerda */
+    display: inline-flex;
+    justify-content: center; /* centraliza o conteúdo dentro do botão */
+    align-items: center;
+    padding: 10px 20px;
+    gap: 3px;
+  } 
+  
+}
 
 
+/* MOBILE */
+@media (max-width: 1024px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    position: absolute;
+    top: 130px; 
+    left: 0;
+    width: 100%;
+    padding: 1rem 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 998;
+  }
+
+  .nav.active {
+    display: flex;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (min-height: 900px) {
+  .cachorro-img {
+    top: 50px; 
+  }
+}
+
+h1 {
+  font-size: 90px;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    height: 250px; 
+    justify-content: flex-start; 
+    padding-left: 20px; 
+  }
+
+  .banner-conteudo {
+    text-align: left;
+    font-size: 1.2rem; 
+    max-width: 90%;
+    z-index: 1000;
+  } 
+}
 
 @media (max-width: 768px) {
   .cachorro-img {
@@ -438,6 +397,15 @@ color: #29957e;
     width: 60px !important; 
     margin-left: 20px; 
     
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    background-position: 28% 100% !important; /* empurra a imagem mais pra direita / arrumei cachoror mobile*/
+    height: 35vh; 
+    background-position: center center; 
+    background-size: cover;
   }
 }
 
@@ -644,68 +612,6 @@ color: #29957e;
   }
 }
 
-
-/* Pequenas telas (ex iPhone SE) */
-@media (max-width: 480px) {
-  .conteudo-banner h1 {
-    margin-top: 1px; /* afasta mais do topo */
-    padding-left: 20px !important;
-    text-align: center;
-  }
-
-  .texto-cuide {
-    font-size: 20px;
-  }
-
-  .texto-amor {
-    font-size: 18px;
-  }
-
-  .btn-contato span {
-    font-size: 14px;
-  }
-}
-
-
-.footer-item p, 
-.footer-item a {
-  font-size: 12px; 
-  
-  color: #333;
-  text-decoration: none;
-}
-
-.contato-item {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  justify-content: center;
-  margin-top: 10px;
-}
-
-.footer-item i {
-  font-size: 32px;
-  color: #29957e;
-  margin-bottom: 10px;
-  flex-shrink: 0; 
-}
-
-.footer-icons {
-  justify-content: space-evenly;
-}
-.icon {
-  height: 20px;
-}
-
-
-.footer-legenda {
-  display: block;
-}
-
-.frase-mobile {
-  display: none;
-}
-
 @media (max-width: 768px) {
   .footer-legenda {
     display: none;
@@ -740,8 +646,38 @@ color: #29957e;
   }
 }
 
+@media (max-height: 500px) { /*  CSS para reduzir espaçamento e fonte da navbar quando deita o celular*/
+  .topo {
+    padding: 10px 20px;
+    height: auto; /* se tiver height fixo, melhor remover ou ajustar */
+  }
 
+  .topo nav ul {
+    gap: 12px; /* diminui espaçamento entre os itens */
+  }
 
+  .topo nav ul li a {
+    font-size: 0.85rem; /* diminui a fonte dos links */
+  }
+}
 
+/* Pequenas telas (ex iPhone SE) */
+@media (max-width: 480px) {
+  .conteudo-banner h1 {
+    margin-top: 1px; /* afasta mais do topo */
+    padding-left: 20px !important;
+    text-align: center;
+  }
 
+  .texto-cuide {
+    font-size: 20px;
+  }
 
+  .texto-amor {
+    font-size: 18px;
+  }
+
+  .btn-contato span {
+    font-size: 14px;
+  }
+}
