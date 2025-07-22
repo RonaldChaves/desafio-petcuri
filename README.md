@@ -7,6 +7,7 @@ O projeto apresenta seções informativas sobre a clínica, equipe, serviços, e
 ## 🌐 Demonstração
 
 > Acesse (Netlify): [PetCure - Clínica Veterinária](clinicapetcure.netlify.app)
+
 > Acesse (GitHub Pages): [PetCure - Clínica Veterinária](https://ronaldchaves.github.io/desafio-petcuri/)
 
 ---
