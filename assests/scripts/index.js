@@ -28,26 +28,25 @@ window.onscroll = function () {
 //
 function toggleEquipe() {
   const escondidos = document.querySelectorAll('.doctor.hide-mobile');
-  const botao = document.querySelector('.show-more-button');
+  const botaoIcone = document.querySelector('.equipe-btn i');
   const visivel = escondidos[0].style.display === 'flex';
 
   escondidos.forEach(doc => {
     doc.style.display = visivel ? 'none' : 'flex';
   });
 
-  botao.textContent = visivel ? 'Mostrar todos' : 'Mostrar menos';
+  botaoIcone.classList.toggle('rotate', !visivel);
 }
 
 //
 function toggleSobre() {
   const textos = document.querySelectorAll('#sobre .hide-mobile');
-  const botao = document.querySelector('#sobre .show-more-button i');
-  const visivel = textos[0].style.display === 'block' || textos[0].style.display === 'flex';
+  const botaoIcone = document.querySelector('.sobre-btn i');
+  const visivel = textos[0].style.display === 'block';
 
   textos.forEach(texto => {
     texto.style.display = visivel ? 'none' : 'block';
   });
 
-  // Alterna a rotação da seta
-  botao.classList.toggle('rotate', !visivel);
+  botaoIcone.classList.toggle('rotate', !visivel);
 }

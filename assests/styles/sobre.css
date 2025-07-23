@@ -215,14 +215,12 @@ p {
     }
 }
 
-/* Esconde os textos extras no mobile */
 @media (max-width: 768px) {
   .hide-mobile {
     display: none;
   }
 }
 
-/* Em telas maiores, mostra tudo e esconde o botão */
 @media (min-width: 769px) {
   .hide-mobile {
     display: block !important;
