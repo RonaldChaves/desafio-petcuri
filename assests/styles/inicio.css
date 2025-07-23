@@ -302,6 +302,10 @@ color: #29957e;
   height: 20px;
 }
 
+.frase-mobile {
+  display: none;
+}
+
 @media (max-width: 1024px) and (orientation: landscape) { /*celular deitado*/
   .conteudo-banner h1 {
     font-size: 2rem; /* diminui o tamanho da fonte */
