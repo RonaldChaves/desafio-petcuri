@@ -196,7 +196,7 @@
 
 /* Mostrar o botão só no mobile */
 @media (min-width: 769px) {
-  .show-more-button {
+  .show-more-button-e {
     display: none;
   }
 }
