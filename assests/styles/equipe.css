@@ -95,6 +95,33 @@
     color: #29957e;
 }
 
+.show-more-button-e {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #333; 
+  margin-top: 20px;
+  transition: transform 0.3s ease;
+  outline: none; 
+}
+.show-more-button-e i {
+  color: #fff;
+  background: transparent;
+}
+
+
+.show-more-button-e, 
+.show-more-button-e i {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.show-more-button-e i.rotate {
+  transform: rotate(180deg);
+}
+
 @media (max-width: 1024px) {
     .equipe {
         min-height: fit-content;
@@ -138,4 +165,38 @@
         height: auto;
         max-width: 100%;
     }
+}
+
+@media (max-width: 768px) {
+    .doctor.hide-mobile {
+        display: none;
+    }
+
+    .show-more-button {
+        display: block;
+        margin: 1em auto;
+        text-align: center;
+        background-color: #29957e;
+        color: white;
+        border: none;
+        padding: 0.6em 1.2em;
+        border-radius: 0.5em;
+        cursor: pointer;
+        font-family: "Montserrat", sans-serif;
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 769px) {
+  .doctor.hide-mobile {
+    display: flex !important;
+  }
+}
+
+
+/* Mostrar o botão só no mobile */
+@media (min-width: 769px) {
+  .show-more-button {
+    display: none;
+  }
 }

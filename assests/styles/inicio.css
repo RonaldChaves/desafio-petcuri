@@ -1,4 +1,6 @@
 /* Reset */
+
+
 .nav-a {
   font-family: Arial, sans-serif;
   font-family: 'Montserrat', sans-serif;
@@ -90,6 +92,7 @@
   z-index: 999;
 }
 
+
 .menu-toggle .bar {
   height: 4px;
   width: 100%;
@@ -120,6 +123,7 @@
   position: relative;
   display: flex;
   align-items: center;
+
   overflow: hidden; 
 }
 
@@ -140,8 +144,10 @@
   left: 30%; /* add */
   transform: translateX(-50%); /* add */
   width: 80%; /* add */
-  max-width: 800px; /* add */  
+  max-width: 800px; /* add */
+  
 }
+
 
 .banner::after {
   content: "";
@@ -235,6 +241,7 @@
   height: 33px;
 }
 
+
 .footer-legenda {
 color: #29957e;
 }
@@ -294,11 +301,6 @@ color: #29957e;
 .icon {
   height: 20px;
 }
-
-.frase-mobile {
-  display: none;
-}
-
 
 @media (max-width: 1024px) and (orientation: landscape) { /*celular deitado*/
   .conteudo-banner h1 {
@@ -393,6 +395,7 @@ h1 {
     transform: none;
     width: 60px !important; 
     margin-left: 20px; 
+    
   }
 }
 
@@ -442,6 +445,7 @@ h1 {
     position: relative;
   }
 
+  
   .logo {
     height: 80px;
     margin-bottom: 10px;
@@ -461,8 +465,11 @@ h1 {
   .conteudo-banner {
     padding: 0;
     margin-top: 0;
+    
     right: 70px; /*escrita branca mobiel*/
     top: 20px;
+    
+    
   }
 
   .conteudo-banner h1 {
@@ -483,10 +490,14 @@ h1 {
     padding: 10px 20px;
     font-size: 14px;
     margin-top: 20px;
+    
+    
   }
 
   .btn-contato span {
     font-size: 16px;
+    
+    
   }
 
   .button-contato { /*botao contato do banner*/

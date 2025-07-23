@@ -24,3 +24,30 @@ window.onscroll = function () {
     const scrolled = (scrollTop / scrollHeight) * 100;
     indicator.style.width = scrolled + "%";
 }
+
+//
+function toggleEquipe() {
+  const escondidos = document.querySelectorAll('.doctor.hide-mobile');
+  const botao = document.querySelector('.show-more-button');
+  const visivel = escondidos[0].style.display === 'flex';
+
+  escondidos.forEach(doc => {
+    doc.style.display = visivel ? 'none' : 'flex';
+  });
+
+  botao.textContent = visivel ? 'Mostrar todos' : 'Mostrar menos';
+}
+
+//
+function toggleSobre() {
+  const textos = document.querySelectorAll('#sobre .hide-mobile');
+  const botao = document.querySelector('#sobre .show-more-button i');
+  const visivel = textos[0].style.display === 'block' || textos[0].style.display === 'flex';
+
+  textos.forEach(texto => {
+    texto.style.display = visivel ? 'none' : 'block';
+  });
+
+  // Alterna a rotação da seta
+  botao.classList.toggle('rotate', !visivel);
+}

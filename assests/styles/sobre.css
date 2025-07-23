@@ -129,6 +129,34 @@ p {
     /* font-size: 1.6em; */
 }
 
+.show-more-button {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #333; 
+  margin-top: 20px;
+  transition: transform 0.3s ease;
+  outline: none; 
+}
+.show-more-button i {
+  color: #29957e;
+  background: transparent;
+}
+
+
+.show-more-button, 
+.show-more-button i {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.show-more-button i.rotate {
+  transform: rotate(180deg);
+}
+
+
 @media (max-width: 1024px ){
     .card{
         height: 12em;
@@ -186,5 +214,24 @@ p {
         font-size: .9em;
     }
 }
+
+/* Esconde os textos extras no mobile */
+@media (max-width: 768px) {
+  .hide-mobile {
+    display: none;
+  }
+}
+
+/* Em telas maiores, mostra tudo e esconde o botão */
+@media (min-width: 769px) {
+  .hide-mobile {
+    display: block !important;
+  }
+
+  .show-more-button {
+    display: none;
+  }
+}
+
 
 
